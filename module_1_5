@@ -1,1 +1,23 @@
+# This is a sample Python script.
 
+name="Иванов"
+age=55
+true_age=True
+immutable_var = [name,age,true_age]
+print (immutable_var)
+
+immutable_var[0]="Петров"
+immutable_var[1]=12
+immutable_var[2]=False
+print (immutable_var)
+
+#Ошибочный оператор
+#print (immutable_var)[0]=45
+#TypeError: 'NoneType' object does not support item assignment
+
+mutable_list=[5,7,"Петя","Вася"]
+print (mutable_list)
+mutable_list.append("Коля")
+print (mutable_list)
+mutable_list.remove("Петя")
+print (mutable_list)
