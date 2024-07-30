@@ -1,0 +1,12 @@
+name="MrChes"
+print (name)
+
+age=50
+print (age)
+
+new_age=15
+age=age+new_age
+print (age)
+
+is_student=True
+print(is_student)
