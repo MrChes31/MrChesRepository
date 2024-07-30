@@ -1,1 +1,27 @@
+# This is a sample Python script.
+
+# 2. Работа со словарями:
+my_dict={"Спартак":1922,"Зенит":1925,"Динамо":1923}
+print(my_dict)
+
+print(my_dict["Зенит"])
+
+my_dict["ЦСКА"]=1911
+print(my_dict)
+
+my_dict.update({"Локомотив":1923,"Торпедо":1930})
+print(my_dict)
+
+del my_dict["Динамо"]
+print(my_dict)
+
+#Работа с множествами:
+my_set ={7,8,9,7,8,9,"аз","буки","веди","аз","буки","веди"}
+print(my_set)
+
+my_set ={7,8,9,7,8,9,"аз","буки","веди","аз","буки","веди","Алфавит",True}
+print(my_set)
+
+my_set.discard(8)
+print(my_set)
 
