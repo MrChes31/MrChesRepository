@@ -1,0 +1,8 @@
+number_completed=12
+hours=1.5
+print ("Курс: Python, всего задач:",number_completed)
+print ("затрачено часов:",hours)
+print ("среднее время выполнения:", number_completed/hours,"часов.")
+
+print()
+print ("Курс: Python, всего задач:",number_completed,"затрачено часов:",hours,"среднее время выполнения:", number_completed/hours,"часов.")
