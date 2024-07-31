@@ -1,9 +1,12 @@
 # This is a sample Python script.
-#Если все числа равны между собой, то вывести 3
-print ("Вариант 1")
-first=100
-second=100
-third=100
+
+first=input("Первое число: ")
+
+second=input("Второе число: ")
+
+third=input("Третье число: ")
+
+
 if first==second and first==third and second==third:
     print ("все числа равны между собой:" , 3)
 elif first==second or first==third or second==third:
@@ -11,28 +14,3 @@ elif first==second or first==third or second==third:
 else:
     print ("равных чисел среди 3-х вообще нет: ",0)
     print()
-
-#Если хотя бы 2 из 3 введённых чисел равны между собой, то вывести 2
-print ("Вариант 2")
-first=100
-second=200
-third=100
-if first==second and first==third and second==third:
-    print ("все числа равны между собой:" , 3)
-elif first==second or first==third or second==third:
-    print ("2 из 3 введённых чисел равны между собой:",2)
-else:
-    print ("равных чисел среди 3-х вообще нет: ",0)
-    print()
-
-#Если равных чисел среди 3-х вообще нет, то вывести 0
-print ("Вариант 3")
-first=100
-second=200
-third=300
-if first==second and first==third and second==third:
-    print ("все числа равны между собой:" , 3)
-elif first==second or first==third or second==third:
-    print ("2 из 3 введённых чисел равны между собой:",2)
-else:
-    print ("равных чисел среди 3-х вообще нет: ",0)
