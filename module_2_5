@@ -1,0 +1,6 @@
+# This is a sample Python script.
+def get_matrix(n, m, value):
+    return [[value for _ in range(m)] for _ in range(n)]
+
+matrix = get_matrix (3, 5,42)
+print("Matrix:", matrix)
