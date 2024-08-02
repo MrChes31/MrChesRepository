@@ -1,0 +1,13 @@
+# This is a sample Python script.
+# Определение функции
+get_matrix=[]
+def get_matrix(n,m,value):
+    matrix=list()
+    for i in range(0,n):
+        matrix.append([value]*m)
+
+    #print (matrix)
+    return matrix
+
+result2 = get_matrix(3, 5, 42)
+print(result2)
