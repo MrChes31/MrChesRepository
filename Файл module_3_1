@@ -1,0 +1,35 @@
+#Домашняя работа по уроку "Пространство имён"
+
+calls = 0
+
+def count_calls(): #Функция счетчик
+    global calls
+    calls=calls+1
+
+def string_info(string): # Функция "Список"
+    string_list=[]
+    string_list.append (len(string))
+    string_list.append(string.lower())
+    string_list.append(string.upper())
+    count_calls()
+    return string_list
+
+def is_contains (string,list_to_search):  #Функция вхождения
+    count_calls()
+    string=string.lower()
+    prisnak=False
+
+    for i in range(1,len(list_to_search)):
+        list_to_search[i]=list_to_search[i].lower()
+        if string in list_to_search[i]:
+            prisnak = True
+            return prisnak
+
+    return prisnak
+
+
+print(string_info('Capybara'))
+print(string_info('Armageddon'))
+print(is_contains('Urban', ['ban', 'BaNaN', 'urBAN']))
+print(is_contains('cycle', ['recycling', 'cyclic']))
+print (calls)
