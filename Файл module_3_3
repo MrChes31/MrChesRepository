@@ -1,1 +1,18 @@
+# Самостоятельная работа по уроку "Распаковка позиционных параметров".
 
+def print_params(a = 1, b = 'строка', c = True):
+    print (a, b, c)
+
+
+print_params()
+print_params(a=5)
+print_params(a=12, b="Cтолбец",c=False)
+
+values_list=("Федя","Коля","Вася")
+print_params(*values_list)
+
+values_dict= {"a":1,"b":2,"c":3}
+print_params(**values_dict)
+
+values_list_2 = [54.32, 'Строка' ]
+print_params(*values_list_2, 42)
