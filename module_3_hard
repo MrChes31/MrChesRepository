@@ -1,0 +1,35 @@
+# This is a sample Python script.
+# Дополнительное практическое задание по модулю: "Подробнее о функциях."
+# Один из таких учеников уснул на клавиатуре в процессе упорной учёбы (ещё и трудолюбивые).
+# Тем не менее, даже после сна, его код остался рабочим и выглядел следующим образом:
+
+data_structure = [
+  [1, 2, 3],
+  {'a': 4, 'b': 5},
+  (6, {'cube': 7, 'drum': 8}),
+  "Hello",
+  ((), [{(2, 'Urban', ('Urban2', 35))}])
+]
+def calculate_structure_sum(data_structure):
+    summ_all= 0
+    # Проверка наличия словарей
+    if isinstance(data_structure, dict):
+        for key, value in data_structure.items():
+            summ_all = summ_all + calculate_structure_sum(key)
+            summ_all = summ_all + calculate_structure_sum(value)
+            # Проверка - список,кортэж,множества
+    elif isinstance(data_structure, (list, tuple, set)):
+        for i in data_structure:
+            summ_all = summ_all + calculate_structure_sum(i)
+            # Проверка целое число и число с плавающей запятой
+    elif isinstance(data_structure, (int, float)):
+        summ_all = summ_all + data_structure
+        # Плюс длина строки
+    elif isinstance(data_structure, str):
+        summ_all = summ_all +  len(data_structure)
+
+    return summ_all
+
+
+result = calculate_structure_sum(data_structure)
+print(result)
