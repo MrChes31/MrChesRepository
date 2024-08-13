@@ -1,0 +1,13 @@
+#Домашняя работа по уроку "Модули и пакеты"
+
+from fake_math import divide as f_dvd
+from true_math import divide as t_dvd
+
+result1 = f_dvd(69, 3)
+result2 = f_dvd(3, 0)
+result3 = t_dvd(49, 7)
+result4 = t_dvd(15, 0)
+print(result1)
+print(result2)
+print(result3)
+print(result4)
