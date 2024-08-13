@@ -1,0 +1,10 @@
+#Домашняя работа по уроку "Модули и пакеты"
+#Бесконечность можно импортировать из встроенной библиотеки math (from math import inf)
+
+from math import inf
+
+def divide(first,sekond):
+    if sekond==0:
+        return inf
+    else:
+        return first/sekond
