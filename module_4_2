@@ -1,0 +1,16 @@
+# Домашняя работа по уроку "Пространство имен."
+
+
+#print ("Я в глобальном пространстве имен")
+
+def test_function():
+    def inner_function():
+        print ("Я в области видимости функции test_function")
+    #Вызовите функцию inner_function внутри функции test_function
+
+    inner_function()
+
+ inner_function ()
+ #     inner_function ()
+#                      ^
+# IndentationError: unindent does not match any outer indentation level
