@@ -21,8 +21,6 @@ class Shop:
     def add(self, *products):
 
         for i in products:
-            print (i.name)
-            input()
             if i.name in self.get_products():
                 print(f'Продукт {i.name} уже есть в магазине')
                 continue
