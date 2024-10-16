@@ -1,5 +1,3 @@
-# This is a sample Python script.
-
 # 2. Работа со словарями:
 my_dict={"Спартак":1922,"Зенит":1925,"Динамо":1923}
 print(my_dict)
@@ -12,7 +10,11 @@ print(my_dict)
 my_dict.update({"Локомотив":1923,"Торпедо":1930})
 print(my_dict)
 
-del my_dict["Динамо"]
+#del my_dict["Динамо"]
+
+a=my_dict.pop('Динамо')
+print(a)
+
 print(my_dict)
 
 #Работа с множествами:
@@ -24,4 +26,3 @@ print(my_set)
 
 my_set.discard(8)
 print(my_set)
-
