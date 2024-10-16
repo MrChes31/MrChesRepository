@@ -1,11 +1,9 @@
-# This is a sample Python script.
-
-my_string=input()
+#my_string=input()
 
 #Например
 my_string="город Санкт-Петербург"
 
-
+print(len(my_string))
 print (my_string.upper())
 print (my_string.lower())
 print (my_string.replace(" ",""))
